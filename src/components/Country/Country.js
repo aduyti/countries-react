@@ -2,14 +2,15 @@ import React from 'react';
 import './Country.css'
 
 const Country = (props) => {
+    const { name, flags, continents, population } = props.country;
     return (
         <div className="country-card">
-            <img style={{ height: '40px', width: '80px' }} src={props.flag} alt="flag" />
-            <h2>{props.name}</h2>
+            <img style={{ height: '40px', width: '80px' }} src={flags.png} alt="flag" />
+            <h2>{name.common}</h2>
             <p>
-                Continent: {props.area}
+                Continent: {continents}
                 <br />
-                Population: {props.population}
+                Population: {population}
             </p>
         </div>
     );
