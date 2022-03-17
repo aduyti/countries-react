@@ -16,6 +16,7 @@ const Countries = () => {
                     name={country.name.common}
                     flag={country.flags.png}
                     area={country.continents}
+                    population={country.population}
                 ></Country>)
             }
         </div>
